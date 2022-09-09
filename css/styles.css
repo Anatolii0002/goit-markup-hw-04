@@ -31,22 +31,34 @@ body {
   letter-spacing: 0.03em;
 }
 
-.page-header .site-nav {
-  display: flex;
-  padding: 50px;
-  margin: auto;
+.page-header {
   list-style: none;
-  justify-content: space-around;
-  
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
 .link {
-  display: inline-block;
   text-decoration: none;
+  margin: 0;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
 }
 
 a {
@@ -57,17 +69,18 @@ a {
   cursor: pointer;
 }
 
-.container {
-margin-left:0 auto;
-margin-right:0 auto;
-width: 1200;
-padding-left: 15px;
-padding-right: 15px;
-}
-
 .section {
   padding-top: 94px;
   padding-bottom: auto;
+}
+
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+}
+
+.site-nav .item + .item {
+  margin-left: 50px;
 }
 
 .logo {
@@ -97,6 +110,19 @@ padding-right: 15px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+
+.auth-nav .item + .item {
+  margin-left: 50px;
+
 }
 
 .link:hover,
@@ -161,13 +187,20 @@ padding-right: 15px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
 }
 
 /* Особливості */
+
+.container-list {
+  display: flex;
+}
+
+.container-list .item + .item {
+margin-left: 30px;
+}
 
 .pec-title {
   color: var(--primary-text-color);
@@ -187,6 +220,15 @@ padding-right: 15px;
 
 /* Чим ми займаємося */
 
+.container-work {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container-work .item + .item {
+  margin-left: 30px;
+}
+
 .what-doing {
   color: var(--primary-text-color);
   font-weight: 700;
@@ -197,6 +239,15 @@ padding-right: 15px;
 }
 
 /* Наша команда */
+
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.team-list .item + .item {
+  margin-left: 30px;
+}
 
 .out-team {
   color: var(--primary-text-color);
@@ -242,6 +293,7 @@ font-family: 'Roboto';
 }
 
 .desing-list {
+  flex-wrap: wrap;
   color: var(--primary-text-color);
   font-weight: 700;
   font-size: 18px;
