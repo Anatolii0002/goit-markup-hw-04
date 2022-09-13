@@ -170,16 +170,22 @@ a {
 /* Герой */
 
 .hero {
-  text-align: center;
-  background-color: var(--primary-black-color);
+  text-align: center; 
 }
 
 .hero-main {
   text-align: center;
+  background-color: var(--primary-black-color);
   padding-top: 200px;
   padding-bottom: 200px;
   max-width: 1600px;
   margin: 0px auto;
+
+  background-image: linear-gradient(
+  rgba(47, 48, 58, 0.4),
+  rgba(47, 48, 58, 0.4)
+  ),
+  url(../images/Img001.jpg);
 }
 
 .hero-title {
@@ -204,6 +210,7 @@ a {
   line-height: 1.88;
   align-items: center;
   text-align: center;
+  cursor: pointer;
   padding: 10px 32px;
   letter-spacing: 0.06em;
 }
@@ -263,6 +270,25 @@ a {
 .team-list {
   display: flex;
   margin-top: 50px;
+}
+
+.team-soc-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.team-soc-item {
+  width: 44px;
+  height: 44px;
+}
+
+.team-soc-link {
+  width: 100%;
+  height: 100%;
+  background-color: aqua;
+  border-radius: 50%;
+  display: block;
 }
 
 .team-list .item + .item {
@@ -400,11 +426,11 @@ color: var(--primary-white-color);
 
 .footer {
   margin-top: 12px;
-  margin-left: 100px;
+  margin-left: 215px;
 }
 
 .container-footer {
-  margin-left: 100px;
+  margin-left: 215px;
 }
 
 .logotipo {
