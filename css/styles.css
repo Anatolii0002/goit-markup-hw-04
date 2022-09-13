@@ -20,6 +20,7 @@ h6 {
 ul {
   margin: 0;
   padding-left: 0;
+  list-style: none;
 }
 
 /* Шапка сайта */
@@ -36,6 +37,9 @@ body {
 }
 
 .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
@@ -44,8 +48,6 @@ body {
 }
 
 .list {
-  display: flex;
-  flex-wrap: wrap;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -61,6 +63,12 @@ body {
   align-items: center;
 }
 
+.auth-nav {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
 a {
   text-decoration: none;
 }
@@ -71,7 +79,7 @@ a {
 
 .section {
   padding-top: 94px;
-  padding-bottom: auto;
+  padding-bottom: 94px;
 }
 
 .site-nav {
@@ -104,25 +112,19 @@ a {
 }
 
 .site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
-.auth-nav {
-  display: flex;
-  margin-left: auto;
-  align-items: center;
 }
 
 .auth-nav .item + .item {
   margin-left: 50px;
-
 }
 
 .link:hover,
@@ -145,6 +147,9 @@ a {
 }
 
 .auth-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -169,7 +174,16 @@ a {
   background-color: var(--primary-black-color);
 }
 
+.hero-main {
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  max-width: 1600px;
+  margin: 0px auto;
+}
+
 .hero-title {
+  margin-bottom: 30px; 
   color: var(--primary-white-color);
   font-weight: 900;
   font-size: 44px;
@@ -180,6 +194,7 @@ a {
 }
 
 .button-primary {
+  display: inline-block;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   font-family: inherit;
@@ -189,6 +204,7 @@ a {
   line-height: 1.88;
   align-items: center;
   text-align: center;
+  padding: 10px 32px;
   letter-spacing: 0.06em;
 }
 
@@ -196,10 +212,11 @@ a {
 
 .container-list {
   display: flex;
+  text-decoration: none;
 }
 
 .container-list .item + .item {
-margin-left: 30px;
+  margin-left: 30px;
 }
 
 .pec-title {
@@ -211,6 +228,7 @@ margin-left: 30px;
 }
 
 .pec-text {
+  width: 270px;
   color: var(--title-text-color);
   font-weight: 400;
   font-size: 14px;
@@ -220,16 +238,9 @@ margin-left: 30px;
 
 /* Чим ми займаємося */
 
-.container-work {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.container-work .item + .item {
-  margin-left: 30px;
-}
-
 .what-doing {
+  margin-bottom: 50px;
+  text-align: center; 
   color: var(--primary-text-color);
   font-weight: 700;
   font-size: 36px;
@@ -238,11 +249,20 @@ margin-left: 30px;
   text-decoration: none;
 }
 
+.container-work {
+  display: flex;
+  justify-content: center;
+}
+
+.container-work .item + .item {
+  margin-left: 30px;
+}
+
 /* Наша команда */
 
 .team-list {
   display: flex;
-  flex-wrap: wrap;
+  margin-top: 50px;
 }
 
 .team-list .item + .item {
@@ -250,6 +270,7 @@ margin-left: 30px;
 }
 
 .out-team {
+  text-align: center;
   color: var(--primary-text-color);
   font-weight: 700;
   font-size: 36px;
@@ -259,6 +280,9 @@ margin-left: 30px;
 }
 
 .our-people {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  text-align: center;
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -268,6 +292,7 @@ margin-left: 30px;
 }
 
 .people {
+  text-align: center;
   color: var(--title-text-color);
   font-weight: 400;
   font-size: 16px;
@@ -276,15 +301,31 @@ margin-left: 30px;
   text-decoration: none;
 }
 
+.button-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.button-list li:not(:first-child) {
+  margin-left: 8px;
+}
+
+
+.button-applications {
+  display: inline-block;
+  text-align: center;
+}
+
 .button-applications {
   color: var(--primary-text-color);
-font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-    text-align: center;
-    letter-spacing: 0.03em;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .button-applications:hover,
@@ -292,8 +333,33 @@ font-family: 'Roboto';
   color: var(--accent-color);
 }
 
-.desing-list {
+.desing-container {
+  display: flex;
   flex-wrap: wrap;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container-title {
+  display: flex;
+  flex-wrap: wrap;
+  width: 370px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.container-title:nth-child(3n) {
+  margin-right: 0;
+}
+
+.container-title:nth-child(-n + 3) {
+  margin-bottom: 0;
+}
+
+.desing-list {
   color: var(--primary-text-color);
   font-weight: 700;
   font-size: 18px;
@@ -319,8 +385,41 @@ color: var(--primary-white-color);
 /* Футер */
 
 .footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0px;
+  margin-top: 20px;
   background-color: var(--primary-black-color);
 }
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer {
+  margin-top: 12px;
+  margin-left: 100px;
+}
+
+.container-footer {
+  margin-left: 100px;
+}
+
+.logotipo {
+  padding-bottom: 20px;
+}
+
+.address {
+  margin: 9px;
+}
+
+.address-list .address-mail .address-tel {
+  text-decoration: none;
+  font-style: normal;
+}
+
 
 .address-city:hover,
 .address-city:focus {
