@@ -255,7 +255,7 @@ background-image: linear-gradient(
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: F5F4FA;
+  background-color: #F5F4FA;
 }
 
 .icon-antenna::before {
@@ -338,10 +338,6 @@ background-image: url("../images/icon-antenna.svg");
   margin-left: 30px;
 }
 
-.social-title {
-  display: flex;
-}
-
 .team-comand {
   padding: 30px;
 }
@@ -360,6 +356,12 @@ background-image: url("../images/icon-antenna.svg");
   height: 44px;
   background-color: #FFFFFF;
   border-radius: 50%;
+}
+
+.team-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .team {
@@ -388,6 +390,7 @@ background-image: url("../images/icon-antenna.svg");
 }
 
 .people {
+  margin-bottom: 16px;
   text-align: center;
   color: var(--title-text-color);
   font-weight: 400;
