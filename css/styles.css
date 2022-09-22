@@ -69,7 +69,8 @@ a {
   padding-bottom: 94px;
 }
 
-.main-nav {
+.main-nav,
+.contact-container {
   display: flex;
   align-items: center;
 }
