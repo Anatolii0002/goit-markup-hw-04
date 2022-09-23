@@ -5,6 +5,7 @@
   --primary-white-color: #ffffff;
   --primary-black-color: #2f303a;
   --title-white-color: rgba(255, 255, 255, 0.6);
+  --background-grey-color: #F5F4FA;
 }
 
 p,
@@ -118,7 +119,7 @@ a {
   text-decoration: none;
 }
 
-.auth-list::before {
+.contact-list::before {
   display: block;
   content: "";
   height: 16px;
@@ -140,15 +141,6 @@ a {
   color: var(--accent-color);
 }
 
-.link.current {
-  color: var(--accent-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-}
-
 .contact-link .link:hover,
 .contact-link .link:focus {
   color: var(--accent-color);
@@ -164,7 +156,7 @@ a {
   text-decoration: none;
 }
 
-.contact-link .link.current {
+.link.current {
   color: var(--accent-color);
   font-weight: 500;
   font-size: 14px;
@@ -228,7 +220,7 @@ background-image: linear-gradient(
 /* Особливості */
 
 .section-peculiarities {
-  padding-top: 94px;
+  padding-bottom: 0;
 }
 
 .peculiarities {
@@ -343,12 +335,12 @@ background-image: url("../images/icon-antenna.svg");
   justify-content: center;
   width: 44px;
   height: 44px;
-  background-color: #FFFFFF;
+  background-color: var(--primary-white-color);
   border-radius: 50%;
 }
 
 .team {
-  margin-bottom: 50px;
+ background-color:var(--background-grey-color);
 }
 
 .team-name {
@@ -380,7 +372,7 @@ background-image: url("../images/icon-antenna.svg");
 }
 
 .btns .btn-style {
-  background-color: #f5f4fa;
+  background-color: var(--background-grey-color);
   color: var(--primiry);
   font-weight: 500;
   line-height: calc(26 / 16);
@@ -458,8 +450,8 @@ background-image: url("../images/icon-antenna.svg");
   background-color: var(--primary-black-color);
 }
 
-.address-list {
-  margin-top: 20px;
+.logo-title {
+  margin-bottom: 20px;
 }
 
 .address-list .address-mail .address-tel {
