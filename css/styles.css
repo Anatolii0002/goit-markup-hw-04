@@ -6,6 +6,7 @@
   --primary-black-color: #2f303a;
   --title-white-color: rgba(255, 255, 255, 0.6);
   --background-grey-color: #F5F4FA;
+  --icons-color: rgba(175, 177, 184, 1);
 }
 
 p,
@@ -123,7 +124,7 @@ a {
   display: block;
   content: "";
   height: 16px;
-  margin-right: 10px;
+  margin: 0;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -238,10 +239,11 @@ background-image: linear-gradient(
   content: "";
   height: 120px;
   margin-bottom: 30px;
-  background-size: contain;
+  border-radius: 4px;
+  background-size: 70px;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: #F5F4FA;
+  background-color: var(--background-grey-color);
 }
 
 .icon-antenna::before {
@@ -308,7 +310,7 @@ background-image: url("../images/icon-antenna.svg");
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
   0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  background: #FFFFFF;
+  background: var(--primary-white-color);
 }
 
 .team-list {
@@ -359,6 +361,26 @@ background-image: url("../images/icon-antenna.svg");
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
+}
+
+ /*--Постійні кліенти--*/
+
+.client-list {
+  display: flex;
+}
+
+.client-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--icons-color);
+  width: 170px;
+  height: 92px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.client-list .item+.item {
+  margin-left: 30px;
 }
 
 .btns {
@@ -490,6 +512,21 @@ background-image: url("../images/icon-antenna.svg");
 
 .tipo {
   color: var(--primary-white-color);
+}
+
+.social-main {
+  
+}
+
+.social-position {
+display: flex;
+}
+
+.social-title {
+  color: var(--primary-white-color);
+  font-style: normal;
+  line-height: 1.14;
+  text-transform: uppercase;
 }
 
 .visually-hidden {
