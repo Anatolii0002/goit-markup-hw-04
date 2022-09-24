@@ -514,19 +514,48 @@ background-image: url("../images/icon-antenna.svg");
   color: var(--primary-white-color);
 }
 
-.social-main {
-  
+.footer .container {
+  display: flex;
 }
 
-.social-position {
-display: flex;
+.social-main-list {
+  display: flex;
+  gap: 10px;
+}
+
+.social-container-wrapper {
+  margin-left: 70px;
+  padding: 0;
 }
 
 .social-title {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-bottom: 20px;
   color: var(--primary-white-color);
   font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
   line-height: 1.14;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+
+.social-top-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: var(--title-text-color);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.social-top-icon:focus,
+.social-top-icon:hover {
+  background-color: var(--accent-color);
 }
 
 .visually-hidden {
