@@ -346,8 +346,8 @@ background-image: url("../images/icon-antenna.svg");
   fill:var(--icons-color)
 }
 
-.social-item:hover .icon,
-.social-item:focus .icon {
+.social-item .icon:hover,
+.social-item .icon:focus {
   fill: var(--primary-white-color);
 }
 
