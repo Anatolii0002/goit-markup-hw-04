@@ -124,14 +124,10 @@ a {
  margin-right: 10px; 
 }
 
-.icon-header:hover,
-.icon-header:focus {
-  fill: var(--accent-color);
-}
-
-.link:hover .icon-header,
-.link:focus .icon-header {
+.contact-list .link:hover,
+.contact-list .link:focus {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 .contact-link .link:hover,
