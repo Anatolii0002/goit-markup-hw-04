@@ -351,8 +351,8 @@ background-image: url("../images/icon-antenna.svg");
   fill: var(--primary-white-color);
 }
 
-.social-item a:hover,
-.social-item a:focus {
+.social-item:hover,
+.social-item:focus {
   background-color: var(--accent-color);
 }
 
@@ -380,11 +380,11 @@ background-image: url("../images/icon-antenna.svg");
 
  /*--Постійні кліенти--*/
 
-.client-list {
+.clients {
   display: flex;
 }
 
-.client-link {
+.clients-list {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -394,17 +394,17 @@ background-image: url("../images/icon-antenna.svg");
   border-radius: 4px;
   cursor: pointer;
 }
-.client-list .item +.item {
+.clients .item +.item {
   margin-left: 30px;
 }
 
-.clients-top-link:hover .icon,
-.clients-top-link:focus .icon {
+.clients-list:hover,
+.clients-list:focus {
   border-color: var(--accent-color);
 }
 
-.client-top-link:hover .icon,
-.client-top-link:focus .icon {
+.client-link:hover .icon,
+.client-link:focus .icon {
   fill: var(--accent-color);
 }
 
