@@ -120,7 +120,13 @@ a {
   text-decoration: none;
 }
 
+.link {
+  display: flex;
+  align-items: center;
+}
+
 .icon-header {
+  fill: currentColor;
  margin-right: 10px; 
 }
 
@@ -157,20 +163,21 @@ a {
 
 .hero {
   text-align: center;
-  background-color:var(--primary-black-color);
+  margin: 0px auto;
+  max-width: 1600px;
+  background-color: var(--primary-black-color);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+      url(../images/Img001.jpg);
 }
 
 .hero-main {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
-  max-width: 1600px;
-  margin: 0px auto;
-
-background-image: linear-gradient(
-  rgba(47, 48, 58, 0.4),
-  rgba(47, 48, 58, 0.4)),
-  url(../images/Img001.jpg);
 }
 
 .hero-title {
@@ -221,9 +228,10 @@ background-image: linear-gradient(
   margin-left: 30px;
 }
 
-.peculiarities-list::before {
-  display: block;
-  content: "";
+.icons-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 120px;
   margin-bottom: 30px;
   border-radius: 4px;
@@ -232,22 +240,6 @@ background-image: linear-gradient(
   background-position: center;
   background-color: var(--background-grey-color);
 }
-
-.icon-antenna::before {
-background-image: url("../images/icon-antenna.svg");
-}
-
-.icon-clock::before {
-  background-image: url("../images/icon-clock.svg");
-}
-
-.icon-diagram::before {
-  background-image: url("../images/icon-diagram.svg");
-}
-
-.icon-astronaut::before {
-  background-image: url("../images/icon-astronaut.svg");
-} 
 
 .peculiarities-title {
   margin-bottom: 10px;
@@ -326,7 +318,6 @@ background-image: url("../images/icon-antenna.svg");
   height: 44px;
   background-color: var(--primary-white-color);
   border-radius: 50%;
-  cursor: pointer;
 }
 
 .social-item .icon {
@@ -371,31 +362,36 @@ background-image: url("../images/icon-antenna.svg");
   display: flex;
 }
 
-.clients-list {
+.clients-link {
   display: flex;
   align-items: center;
   justify-content: center;
   border: 1px solid var(--icons-color);
-  width: 170px;
-  height: 92px;
   border-radius: 4px;
-  cursor: pointer;
+  width: 100%;
+  height: 100%;
 }
 
-.client-link .icon {
+.clients-list { 
+  width: 170px;
+  height: 92px;
+}
+
+.clients-link .icon {
   fill: var(--icons-color);
 }
+
 .clients .item +.item {
   margin-left: 30px;
 }
 
-.clients-list:hover,
-.clients-list:focus {
+.clients-link:hover,
+.clients-link:focus {
   border-color: var(--accent-color);
 }
 
-.client-link:hover .icon,
-.client-link:focus .icon {
+.clients-link:hover .icon,
+.clients-link:focus .icon {
   fill: var(--accent-color);
 }
 
@@ -426,6 +422,8 @@ background-image: url("../images/icon-antenna.svg");
 .btns .btn-style:focus {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+  0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .items {
@@ -532,6 +530,7 @@ background-image: url("../images/icon-antenna.svg");
 
 .footer .container {
   display: flex;
+  align-items: baseline;
 }
 
 .social-main-list {
@@ -545,9 +544,6 @@ background-image: url("../images/icon-antenna.svg");
 }
 
 .social-title {
-  display: flex;
-  align-items: center;
-  justify-content: start;
   margin-bottom: 20px;
   color: var(--primary-white-color);
   font-style: normal;
@@ -569,7 +565,7 @@ background-image: url("../images/icon-antenna.svg");
   cursor: pointer;
 }
 
-.icon {
+.icon-social {
   fill: var(--primary-white-color);
 }
 
