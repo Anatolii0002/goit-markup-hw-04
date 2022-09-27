@@ -127,7 +127,7 @@ a {
 
 .icon-header {
   fill: currentColor;
- margin-right: 10px; 
+  margin-right: 10px; 
 }
 
 .contact-list .link:hover,
@@ -136,8 +136,8 @@ a {
   fill: var(--accent-color);
 }
 
-.contact-link .link:hover,
-.contact-link .link:focus {
+.nav-link .link:hover,
+.nav-link .link:focus {
   color: var(--accent-color);
 }
 
@@ -162,6 +162,8 @@ a {
 /* Герой */
 
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
   text-align: center;
   margin: 0px auto;
   max-width: 1600px;
@@ -172,12 +174,6 @@ a {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)),
       url(../images/Img001.jpg);
-}
-
-.hero-main {
-  text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -308,6 +304,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 10px;
 }
 
 .social-item {
@@ -324,8 +321,8 @@ a {
   fill:var(--icons-color)
 }
 
-.social-item .icon:hover,
-.social-item .icon:focus {
+.social-item:hover .icon,
+.social-item:focus .icon {
   fill: var(--primary-white-color);
 }
 
